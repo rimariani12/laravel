@@ -1,4 +1,4 @@
-@extends('layout/main');
+@extends('layout/main')
 
 @section('title', 'Daftar Mahasiswa')
 
@@ -6,7 +6,9 @@
 <div class="container">
 	<div class="row">
 		<div class="col">
+
 			<h2>Daftar Mahasiswa</h2>
+
 			<table class="table">
   				<thead class="thead-dark">
     				<tr>
@@ -31,7 +33,7 @@
       						<a href="" class="badge badge-danger">hapus</a>
       					</td>
     				</tr>
-    				@endforeach;
+    				@endforeach
   				</tbody>
 			</table>
 		</div>

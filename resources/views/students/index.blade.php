@@ -6,7 +6,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-6">
-			<h2>Daftar Mahasiswa</h2>
+			<h2 class="mt-3">Daftar Mahasiswa</h2>
+
+      <a href="/students/create" class="btn btn-primary my-3">Tambah Data Mahasiswa</a>
+
 			<table class="table">
   				<thead class="thead-dark">
     				<tr>
@@ -29,7 +32,7 @@
       						
       					</td>
     				</tr>
-    				@endforeach;
+    				@endforeach
   				</tbody>
 			</table>
 		</div>
