@@ -14,7 +14,11 @@ class PageController extends Controller
 
     public function about()
     {
-        $nama ='RRN!';
-        return view('about', ['nama' => $nama]);
+        return view('about');
+    }
+
+    public function index()
+    {
+    	return view('mahasiswa');
     }
 }

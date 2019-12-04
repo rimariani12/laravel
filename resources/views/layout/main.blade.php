@@ -8,27 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>@yield('judul')</title>
+    <title>@yield('title')</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <div class="container">
-        <a class="navbar-brand" href="#">RIMARN</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="/">Home</a>
-            <a class="nav-item nav-link" href="/about">About</a>
-            <a class="nav-item nav-link" href="/mahasiswa">Mahasiswa</a>
-            <a class="nav-item nav-link" href="/students">Students</a>
-            </div>
-        </div>
-        </div>
-    </nav>
 
-    @yield('container')
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Rekweb</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url('/about')}}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url('/mahasiswa')}}">Mahasiswa</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{{url('/students')}}">Students</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+@yield('container')
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

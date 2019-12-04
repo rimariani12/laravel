@@ -61,7 +61,13 @@ class MahasiswaController extends Controller
      */
     public function edit($id)
     {
-        //
+        DB::table('mahasiswa')
+            ->where('id', $id)
+            ->update(['nama' => $nama,
+                        'nrp' => $nrp,
+                        'email' => $email,
+                        'jurusan' => $jurusan
+            ]);
     }
 
     /**
@@ -84,6 +90,6 @@ class MahasiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('mahasiswa')->where($id)->delete();
     }
 }
